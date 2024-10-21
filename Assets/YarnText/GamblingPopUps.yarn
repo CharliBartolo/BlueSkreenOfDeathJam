@@ -1,0 +1,37 @@
+﻿title: GamblingPopUps
+tags:
+---
+Welcome to Button Bash! 
+
+All you need is a dollar and working mouse to win big!
+Try your luck today!
+// player may need to enter card details which unlocks the bank web page
+===
+title: FirstPopup
+---
+Don't give up! You've got two spins left!
+===
+title: SecondPopUp
+---
+Don't give up! You've got one spin left!
+===
+title: ThirdPopUp
+---
+You have done your last spin.
+Please come back tomorrow to try and win big on Button Bash!
+===
+title: FourthPopUp
+---
+Invalid spin.
+Please come back tomorrow to try and win big on Button Bash!
+===
+title: FifthPopUp
+---
+Invalid spin.
+Please come back tomorrow to try and win big on Button Bash!
+===
+title: FinalPopUp
+---
+You were always a greedy little pig. 
+Now you'll die like one.
+===
