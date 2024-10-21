@@ -391,8 +391,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
-  m_sharedMaterial: {fileID: 6535318034037572729, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -673,8 +673,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
-  m_sharedMaterial: {fileID: 6535318034037572729, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -807,8 +807,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
-  m_sharedMaterial: {fileID: 6535318034037572729, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1177,8 +1177,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Chat
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
-  m_sharedMaterial: {fileID: 6535318034037572729, guid: f2ae8d62020c47f1aaa4b82f96a41867, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1949,7 +1949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4232120580080530356, guid: 4d7a32e0fd6af6d2e882814bf06bb90b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5976976621622566277, guid: 4d7a32e0fd6af6d2e882814bf06bb90b, type: 3}
       propertyPath: m_Pivot.x
