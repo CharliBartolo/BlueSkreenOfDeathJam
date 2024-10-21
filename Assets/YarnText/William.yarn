@@ -1,27 +1,105 @@
 ﻿title: William
 tags:
 ---
-Old Message Log
-Player: You got a few golden tickets you can send my way, Wonka? 🤑🤑
-<<wait 1>>
-Willy Wonka: Nah. Thursday I get paid. Go ask one of ya other rich friends 💩
-
-New Message received.
-
+<<declare $usedgamblingsite = false>>
+<<declare $spoketomum = false>>
 Willy Wonka: Hey, man. You coming to Jimmy's tonight? Got a free spot in my car if ya need (caremoji).
 
--> Player: Maybe? To be honest I'm having a bit of a weird day today.
-    Willy Wonka: You doing okay? Jess said you looked a bit sick when she put you in the cab last night.
-
-    Player: Well the driver took a bunch of wrong turns cos I got no clue where I am rn.
-
-    Willy Wonka: Wait you're not at home?
-
-    Player: Nope.
-
-
+-> Player: You think you can pick me up now? I'm in some dingy apartment.
+    Willy Wonka: Sounds like you're home sweet home to me.
+    Player: I'm serious, bro. I've got no clue where I am and I think my laptop's gotten hacked.
+    Willy Wonka: Dude, I'm on break rn I can't just up and leave.
+    Player: What a good friend you are.
+    Willy Wonka: Fuck you. Hope that hacker rips your computer a new one.
+    Player: More like my wallet. Whoever hacked it wants money from me.
+    <<jump Money>>
 -> Player: Sure. But can ya spot me some cash first?
--> Player: Will, I got no clue where I even am right now. I think someone's hacked my laptop too.
+    <<set $askedforcash = true>>
+    Willy Wonka: Straight to business as usual.
+    Player: Look whoever's hacked my laptop wants money from me.
+    Willy Wonka: Wait, your laptop got hacked? I told you to stop watching those pornos dood.
+    Player: Fuck off. That's not what happened.
+    Willy Wonka: Sure. Either way, that poor hacker's gone after the wrong guy for cash (laughemoji).
+    <<jump Money>>
+-> Player: Fuck Jimmy, my laptop's busted. Did you install a virus or something on it?
+    <<set $accusedwill = true>>
+    Willy Wonka: Why the fuck would I touch your stupid laptop?
+    Player: I dunno.
+    Willy Wonka: Yeah, maybe think before you open your mouth dickhead
+    Player: Sorry bro.
+    Willy Wonka: Whatever. So what's the damage on your computer?
+    Player: I just connected to dial-up but seems whoever messed with my laptop wants money.
+    <<jump Money>>
+===
+title: Money
+---
+<<if $askedforcash == false>>
+Willy Wonka: Money? From you? I think they hacked the wrong guy (laughemoji)
+<<endif>>
 
+Player: Haha. Yeah, I'm wiped on funds. You reckon you could throw some my way?
 
+Willy Wonka: Dude, we talked about this. I'm not your ATM.
+
+Player: (beggingemojix2)
+
+Willy Wonka: Fine, but you're walking yourself to Jimmy's tonight. How much you need?
+
+-> Player: 20 should do me. I've got other leads I can chase up.
+    Willy Wonka: Least you're honest. All right, I'll shoot it through.
+    Player: You're a fucking hero. Big kisses for you tonight.
+    Willy Wonka: Ugh, please no.
+    <<jump GamblingPage>>
+-> Player: You cover the full hundred and I'll kiss your feet
+    Willy Wonka: No fucking way. I've got my dogs to feed bro
+    Player: C'moonnnn I know you're good for it.
+    Willy Wonka: Don't be a dick. I'll send ya 20 and that's it.
+    <<jump GamblingPage>>
+-> Player: I know it's a lot but they're asking for 300.
+    <<set $askedfor300 = true>>
+    Willy Wonka: Yeah, you're never getting your laptop back.
+    Player: Wow, you're an upstanding jackass, Will
+    <<set $Willmentionedmum = true>>
+    Willy Wonka: And you're a dropkick. Go suck up to ya mum or something for that much. I'll send ya 20 and that's it.
+    <<jump GamblingPage>>
+===
+title: GamblingPage
+---
+<<if $askedfor300 == true>>
+Willy Wonka: You're gonna need to win big or convince someone not as smart as me to give you 300 bucks.
+<<endif>>
+<<if $askedfor300 == false>>
+Willy Wonka: You should try out that press to win site Jen was harping on about for some easy cash.
+<<endif>>
+
+Player: Yeah, I'll give it a go. Gotta spend to win big, ey?
+Willy Wonka: If ya wanna keep your laptop, yeah. Lemme know how it goes. I gotta get back to work.
+Player: All right.
+
+<<if $usedgamblingsite == true>>
+    <<jump GamblingEvent>>
+<<endif>>
+===
+title: GamblingEvent
+---
+
+-> Player: Is it common for gambling sites to corrupt your laptop with nightmare fuel?
+    Willy Wonka: What happened?
+    Player: I did my spins for the day and a few more after that. It let me so I thought maybe I'd broken the site and could get some free cash.
+    Player: But then this popup happened, saying I wouldn't make it out of here alive and a creepy as fuck photo was on my screen.
+    Willy Wonka: Damn, you've been hacked all right.
+    Player: By what? A fucking demon? Made me jump outta my skin.
+    Willy Wonka: Scary images can't kill ya man. Deep breaths.
+    Player: Easy for you to fucking say.
+-> Player: No luck. You sure you can't spare more cash?
+    Willy Wonka: Seriously?
+    Player: Yeah.
+    Willy Wonka: Fuck off.
+    Player: Not until you give me more cash.
+    <<wait  2>>
+    <<if $Willmentionedmum == true && $spoketomum == false>>
+    Player: Bothering mum it is, then.
+    <<else>>
+    Player: Asshole
+    <<endif>>
 ===
