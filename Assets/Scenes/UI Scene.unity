@@ -1218,6 +1218,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: startNode
+      value: William
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: yarnProject
       value: 
       objectReference: {fileID: 7545569452688597077, guid: 38fdbc606fe064f4ca2f73bbe69498b9, type: 3}
@@ -4214,7 +4218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4232120580080530356, guid: 4d7a32e0fd6af6d2e882814bf06bb90b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5976976621622566277, guid: 4d7a32e0fd6af6d2e882814bf06bb90b, type: 3}
       propertyPath: m_Pivot.x
