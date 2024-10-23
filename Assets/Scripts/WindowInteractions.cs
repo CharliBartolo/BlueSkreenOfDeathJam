@@ -8,12 +8,34 @@ public class WindowInteractions : MonoBehaviour
     public GameObject object_to_toggle;
     public bool hide_on_mouse_away;
     public Vector2[] mouseover_box;
+    public GameObject object_to_hide;
+
+    public GameObject object_to_reveal;
+    public float timer = 0f;
+
 
     public void ToggleVisible()
     {
         object_to_toggle.SetActive(!object_to_toggle.activeSelf);
     }
 
+    public void HideAfterDelay() {
+        //tweaks will be needed float delayNumber in function for example
+        if (object_to_hide.activeSelf == true) {
+                timer += Time.deltaTime;
+
+                if (timer >= 2) {
+                    object_to_reveal.SetActive(true);
+                    object_to_hide.SetActive(false);
+                    timer = 0;
+                }
+            }
+    }
+
+    void Update()
+    {
+        HideAfterDelay();
+    }
     void FixedUpdate()
     {
         if (hide_on_mouse_away && object_to_toggle.activeSelf)
